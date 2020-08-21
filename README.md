@@ -16,4 +16,8 @@ use
     cat /header.txt 
     cat /data.bi
 
-you can the tool it with go get -v github.com/codecare/httpcalllogger/cmd/httpcalllogger
+you can get the tool it with 
+
+    go get -v github.com/codecare/httpcalllogger/cmd/httpcalllogger
+
+this will install an executable in your default path for go executables $GOPATH/bin (default GOPATH=$HOME/go)

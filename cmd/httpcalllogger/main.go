@@ -11,7 +11,10 @@ func main() {
 	fmt.Println("started")
 
 	http.HandleFunc("/", logcall)
-	http.ListenAndServe(":10080", nil)
+	err := http.ListenAndServe(":10080", nil)
+	if err != nil {
+		panic(err)
+	}
 }
 
 func logcall(w http.ResponseWriter, req *http.Request) {
